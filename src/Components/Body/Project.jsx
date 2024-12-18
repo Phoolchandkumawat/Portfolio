@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { moniter, projectImages2, projectImages3, projectImages4, projectImages5 } from '../../img'
+import { moniter, projectImages1, projectImages2, projectImages3, projectImages4, projectImages5 } from '../../img'
 
 function Project() {
 
