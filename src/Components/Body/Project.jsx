@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { moniter, projectImages1, projectImages2, projectImages3, projectImages4, projectImages5 } from '../../img'
+import { moniter, projectImages2, projectImages3, projectImages4, projectImages5 } from '../../img'
 
 function Project() {
 
@@ -24,7 +24,7 @@ function Project() {
                             <span>Tailwind</span>
                             <span>Redux Toolkit</span>
                         </p>
-                        {/* <img className="moniter w-[600px] h-[360px] object-fill group-hover:flex flex absolute  top-[0%] -right-[105%]" src={projectImages1} alt="moniter"/> */}
+                        
                     </div>
                 </div>
                 <div className="project flex gap-10 relative -left-[29px] mt-5" onMouseEnter={()=>setMouser(projectImages4)} onMouseLeave={()=>setMouser(false)}>
@@ -65,8 +65,8 @@ function Project() {
             </div>
         </div>
         <div className="right w-1/2 h-4/5 my-auto relative sm:grid hidden">
-            <img src={mouser== false ? '':mouser} alt="" className={`${mouser == false ? "hidden" : "flex"} absolute w-[93%] h-3/5  ml-[4%] top-6 left-0 z-10`} />
-            <img src={moniter} alt="" className='relative z-[999]' />
+            <img src={mouser== false ? '':mouser} loading="lazy" alt="" className={`${mouser == false ? "hidden" : "flex"} absolute w-[93%] h-3/5 xl:h-3/5 md:h-[23vw] lg:h-[22vw]  ml-[4%] top-6 left-0 z-10`} />
+            <img src={moniter} alt="" loading="lazy" className='relative z-[999]' />
 
 
         </div>
