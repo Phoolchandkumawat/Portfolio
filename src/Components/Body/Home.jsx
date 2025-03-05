@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { Bootstrap, Css, email, github, Html, js, linkdn, Reactavatar, two } from "../../img";
+import { Bootstrap, Css, email, giffy, github, Html, js, linkdn, Reactavatar, two } from "../../img";
 import gsap from "gsap";
 import { useRef, useState } from "react";
 
@@ -34,24 +34,48 @@ export default function Home (){
             delay:1.2
         })
 
+        gsap.from('.an',{
+            marginLeft:0,
+            duration:1, 
+            delay:1
+        })
+
+        gsap.from(".an-img",{
+            opacity:0,
+            duration:1,
+            delay:1.5,
+        })
+        gsap.from(".des",{
+            opacity:0,
+            duration:1,
+            delay:1,
+        })
+
+
+    
+
     })
 
     const mouseMove = (e)=>{
         // console.log(e.clientX)
         // console.log(mouseRef.current.children)
-        const allImages = mouseRef.current.children
+        // const allImages = mouseRef.current.children
         const clientX = e.clientX
         const clientY = e.clientY
-        const allimgRect = []
-        for(let i=0; i<allImages.length; i++){
-            allimgRect.push(allImages[i].getBoundingClientRect())
+        // setValY((clientX - mouseRef.current.getBoundingClientRect().x - mouseRef.current.getBoundingClientRect().width/2)/20)
+        // setValX(-(clientY - mouseRef.current.getBoundingClientRect().y - mouseRef.current.getBoundingClientRect().height/2)/20)
+        // const allimgRect = []
+        // for(let i=0; i<allImages.length; i++){
+        //     allimgRect.push(allImages[i].getBoundingClientRect())
             
-        }
+        // }
         // setValY(-(clientY - allImages[i].getBoundingClientRect().y- allImages[i].getBoundingClientRect().width)/100)
         // console.log(allimgRect)
         
         // allImages[1].style.transform = `rotateX(${clientY}deg) rotateY(${clientX}deg)`
         // console.log(valX)
+        // mouseRef.current.style.transform = `rotateX(${valX}deg) rotateY(${valY}deg)`
+        console.log(valX,valY)
         
     }
 
@@ -66,8 +90,8 @@ export default function Home (){
                         <div className="border-red-600 border-[2px] rounded-full w-56 h-56"></div>
                     </div>
                 </div>
-                <div className="relative w-1/2 xl:flex hidden lg:flex" ref={mouseRef}>
-                    <img src={Html} alt="" className="w-20 absolute top-[72%] rotate-12 left-[30%] " />
+                <div className="relative w-1/2 xl:flex hidden lg:flex" >
+                    <img  src={Html}  alt="" className="w-20 absolute top-[72%] rotate-12 left-[30%] " />
                     <img src={Css} alt=""  className="w-20 absolute top-[20%] rotate-12 left-[70%]" />
                     <img src={js} alt=""  className="w-20 absolute top-[72%] rotate-12 left-[70%]" />
                     <img src={Bootstrap} alt=""  className="w-20 absolute top-[45%] rotate-12 left-[10%]" />
@@ -75,13 +99,18 @@ export default function Home (){
                 </div>
             </div>
             <div className="w-5/6 h-full m-auto flex z-50 relative">
-                <div className="sm:w-1/2 h-full items-center justify-center flex gap-4 w-full z-50">
+                <div className="sm:w-1/2 h-full items-center justify-center flex gap-4 w-full z-50 des">
                     <div className="text w-full h-2/5">
-                        <h3 className="text-[16px] text1 relative">Hello I am</h3>
-                        <h3 className="text-[18px] relative text2 my-2 text-red-500 bg-gray-800 w-max px-5 py-1 rounded-3xl">Phoolchand Kumawat</h3>
+                        <div className="text1 relative text-[16px] flex"> <h3 className="relative">Hello I am</h3><h6 className="anime relative top-0 left-0">👋</h6></div>
+                        <div className="text-anime text-[18px] overflow-hidden relative text2 my-2  bg-gray-800 w-max px-5 py-1 rounded-3xl">
+                            <h3 className="z-10 text-red-500 relative">Phoolchand Kumawat</h3>
+                        </div>
                         <h3 className="text-3xl grid my-5">
                             <span>Front-End</span>
-                            <span className="ml-20">Developer</span>
+                            <div className="flex">
+                            <img src={giffy} className="ml-10 an w-10 h-10 an-img" alt="" /> 
+                                <span className="">Developer</span>
+                            </div>
                         </h3>
                         <p className="sm:w-4/6 w-5/6">
                         passionate about creating responsive and user-friendly web applications. Let’s build something amazing together!

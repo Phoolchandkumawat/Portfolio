@@ -20,6 +20,7 @@ import projectImages2 from './E-store.jpeg'
 import projectImages3 from './Eat-curius.jpeg'
 import projectImages4 from './ChatApp.jpeg'
 import projectImages5 from './Zelt.jpeg'
+import giffy from './giphy.gif'
 
 
 
@@ -46,5 +47,5 @@ export{
     projectImages4,
     projectImages5,
     github,
-
+    giffy,
 }

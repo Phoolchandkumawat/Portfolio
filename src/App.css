@@ -20,3 +20,37 @@
 .textpro:hover>p>span{
   font-size: 16px;
 }
+
+
+
+.text-anime::before{
+  position: absolute;
+  content: "";
+  width: calc(100%);
+  height: 100%;
+  left: 0;
+  background-image: linear-gradient(180deg, #6ef400,#62ff00);
+  /* background-color: blue; */
+  animation: rotate 5s linear infinite;
+  transition: 1s;
+}
+
+.text-anime::after{
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background-color: rgb(31 41 55 /1);
+    display: flex;
+    border-radius: inherit;
+}
+
+
+
+@keyframes rotate {
+  10%{
+    background-image: linear-gradient(180deg, #f40000,#ff0084);
+  }
+  100%{
+      rotate: 360deg;
+  }
+}
