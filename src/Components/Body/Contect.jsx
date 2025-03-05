@@ -44,7 +44,7 @@ function Contect() {
       <div className="h-full w-3/4 m-auto relative z-50">
         <div className="mt-10 w-full h-max">
           <h4 className='text-center text-3xl'>Let's Work Together Contact Me</h4>
-          <p className='text-center mt-5'>Contact me for any work or collaboration, and I'm waiting for your text.</p>
+          <p className='text-center mt-5'>Contact me for any work or collaboration, and I'm waiting to hear from you.</p>
           <form onSubmit={handleSubmit} className='w-full grid grid-cols-1 gap-3 mt-20 items-center justify-center place-content-center pb-10 '>
             <input
               type="text"
@@ -66,8 +66,9 @@ function Contect() {
               placeholder="Your Message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className='text-black sm:w-2/4 w-full m-auto rounded-md p-3 h-10 outline-none'
+              className='text-black max-h-32 sm:w-2/4 w-full m-auto rounded-md p-3 h-10 outline-none'
               required
+              
             />
             <button type="submit" className='m-auto h-[40px] sm:h-[40px] w-full sm:w-2/6 bg-red-800 rounded-md text-white outline-none border-none font-semibold'>
               Contact Me
