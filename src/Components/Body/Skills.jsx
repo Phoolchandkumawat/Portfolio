@@ -5,7 +5,7 @@ import {tailwind, Html, Css, js, Reactavatar, Bootstrap, Male, redux, reactroute
 function Skills() {
 
   return (
-    <div className="w-full sm:h-screen md:h-max h-max sm:pb-0 pb-10 bg-black flex items-center justify-center overflow-hidden relative">
+    <div className="py-20 w-full sm:h-screen md:h-max h-max sm:pb-0 pb-10 bg-black flex items-center justify-center overflow-hidden relative">
         <div className="w-[400px] hidden md:flex">
             <img src={Male} alt=""className='w-full'/>
         </div>
