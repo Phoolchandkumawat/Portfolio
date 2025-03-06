@@ -30,7 +30,6 @@ function Skills() {
                 end: 'top',
                 toggleActions: 'restart none none none',
                 scrub:true,
-                markers:true
             }
         })
     })
