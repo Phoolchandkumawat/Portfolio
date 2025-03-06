@@ -75,7 +75,7 @@ export default function Home (){
         // allImages[1].style.transform = `rotateX(${clientY}deg) rotateY(${clientX}deg)`
         // console.log(valX)
         // mouseRef.current.style.transform = `rotateX(${valX}deg) rotateY(${valY}deg)`
-        console.log(valX,valY)
+        // console.log(valX,valY)
         
     }
 
