@@ -27,7 +27,7 @@ function Skills() {
             scrollTrigger:{
                 trigger:'.skills',
                 start: 'top 80%',
-                end: 'top',
+                end: 'top 20%',
                 toggleActions: 'restart none none none',
                 scrub:true,
             }
